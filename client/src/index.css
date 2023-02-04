@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.decor-bg {
+  background-image: url("./assets//bg-decor.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pagination {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.page-item {
+  margin: 0 0.5rem;
+  padding: 0.3rem 0.7rem;
+  background-color: #f6f9fd;
+  border: 0.5px solid #2d5cd0;
+  user-select: none;
+}
+
+.page-item:first-of-type {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.page-item:last-of-type {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.page-link {
+  font-weight: 600;
+  color: #2d5cd0;
+}
+
+.active {
+  background-color: #b8bbc5;
+}
+
+.carousel-root,
+.carousel,
+.slider-wrapper,
+.slider,
+.slide {
+  height: 100%;
+}
+
+.carousel:nth-of-type(2) {
+  display: none;
+}
+
+img {
+  user-select: none;
+}
+
+.profile-avatar {
+  position: relative;
+}
+
+.profile-avatar::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  height: 100%;
+  width: 100%;
+  background-color: #2d5cd0;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.scroller::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Ratings */
+
+.rating-outer {
+  display: inline-block;
+  position: relative;
+  font-family: FontAwesome;
+  color: #fdcc0d;
+  font-size: 22px;
+}
+
+.rating-outer::before {
+  content: "\f006 \f006 \f006 \f006 \f006";
+}
+
+.rating-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.rating-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  color: #f8ce0b;
+}
