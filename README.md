@@ -1,6 +1,5 @@
 ## About the Project:
-This is a Full Stack (MERN) Facebook Clone.
-It features most popular facebook functionalities and is fully responsive for mobile view.
+This is a Full Stack (MERN) Blog post web application and it's fully responsive.
 
 Key Features:
 - Authentication Flow (Both Cookie and JWT)
