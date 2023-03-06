@@ -12,4 +12,4 @@ Key Features:
 - Ability to report a post and for admin to preview the report, and choose a proper action
 - Admin Panel, where you can manage all users & posts
 
-#### Preview: [Live Demo:](https://bloggers-app-v2.onrender.com/)
+#### Preview: [Live Demo:](https://bloggers-app-v2-p0j0.onrender.com)
